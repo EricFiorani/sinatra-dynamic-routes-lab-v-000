@@ -45,6 +45,8 @@ class App < Sinatra::Base
       "#{@multiply}"
     else
       params[:operation].include?('divide')
+      @divide = @number1 / @number2
+      "#{@divide}"
     end
   end
 end

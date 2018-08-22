@@ -32,7 +32,9 @@ class App < Sinatra::Base
     @number1 = params[:number1].to_i
     @number2 = params[:number2].to_i
 
-    if params[:operation] = '/add'
+    if params[:operation].include?('add')
       @number1 + @number2
+    end
+    "#{}"
   end
 end

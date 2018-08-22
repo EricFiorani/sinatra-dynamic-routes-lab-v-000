@@ -37,6 +37,7 @@ class App < Sinatra::Base
       "#{@add}"
     elsif
       params[:operation].include?('subtract')
+      @subtract = @number1 - @number2
     end
   end
 end

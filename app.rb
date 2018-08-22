@@ -41,7 +41,7 @@ class App < Sinatra::Base
       "#{@subtract}"
     elsif
       params[:operation].include?('multiply')
-      @muplity = @number1 * @number2
+      @multiply = @number1 * @number2
       "#{@multiply}"
     else
       params[:operation].include?('divide')
